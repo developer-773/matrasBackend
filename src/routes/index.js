@@ -4,9 +4,7 @@ const adminRoutes = require("./admin");
 
 router.use("https://dream-matras.onrender.com/api", apiRoutes);
 router.use("/admin", adminRoutes);
-router.use("/api", (req, res) =>
-	res.status(404).json({ status: 404, message: "No API route found" })
-);
+
 
 router.get("/", (req, res) => {
 	res.write("Home page")

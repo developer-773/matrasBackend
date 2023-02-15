@@ -14,6 +14,8 @@ app.use(cors({ origin: '*' }));
 app.use(routes);
 app.use(express.static(path.join(__dirname, "uploads")));
 app.use('/static',express.static('uploads'))
+app.set('trust proxy', true);
+
 
 
 app.listen(PORT, () => {
