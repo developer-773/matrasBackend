@@ -9,7 +9,7 @@ router.use("/api", (req, res) =>
 );
 
 router.get("/", (req, res) => {
-	res.write("Ok")
+	res.write("Home page")
 	res.end();
 });
 
