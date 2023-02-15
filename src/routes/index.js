@@ -10,7 +10,7 @@ router.use("/api", (req, res) =>
 
 
 
-router.get("/", (req, res) => {
+router.get("https://dream-matras.onrender.com/api/products", (req, res) => {
 	res.write("Home page")
 	res.end();
 });
